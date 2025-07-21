@@ -14,7 +14,7 @@
 - 压缩后的模型在下游任务中的精度与原始数据训练的模型相当。
 
 
-### 2. 核心技术方案（论文复现要点）
+### 2. 核心技术方案
 #### （1）VAE压缩框架
 复现论文提出的"潜变量表示编码"思路，通过编码器将高分辨率气象数据映射到低维潜空间，再通过解码器重构数据，实现无损级的有效压缩（非严格无损，但保留核心信息）。
 
@@ -46,11 +46,6 @@
 - 均方根误差（RMSE）：< 0.5℃（温度要素）；
 
 ## 可视化结果
-![气象数据压缩重构对比](examples/reconstruction_comparison.png)
-- **左**：原始1km分辨率气象数据（温度场）；
-- **中**：VAE重构数据（从压缩潜变量恢复）；
-- **右**：重构误差（绝对值），误差主要集中在局部微小扰动，整体分布特征一致。
-
 
 ## 参考文献
 - Liu, Q., Gong, B., Zhuang, X., et al. (2024). Compressing high-resolution data through latent representation encoding for downscaling large-scale AI weather forecast model. EGUsphere [preprint]. https://doi.org/10.5194/egusphere-2024-3183
