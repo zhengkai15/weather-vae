@@ -1,0 +1,52 @@
+# folder
+__pycache__
+work_dir
+log
+logs
+temp
+tmp
+output*
+data
+output
+assets
+.history
+.vscode
+
+
+# file
+*.pyc
+*.jpg
+*.png
+*.log
+*.txt
+*.toml
+
+# data file
+*.nc
+*.npy
+
+
+# model file
+*.pth
+
+# customized file
+occ.sh
+main/configs/occ_CycSingleFC01base.py
+trtr.sh
+
+feature_extractor
+log
+safety_checker
+scheduler
+text_encoder
+tokenizer
+unet
+vae
+model_index.json
+
+*.log
+*.npy
+*.txt
+*results
+*.out
+*.pt
